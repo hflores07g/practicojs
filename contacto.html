@@ -8,36 +8,110 @@
         <link rel="stylesheet" href="./assets/css/index.css">
     </head>
     <body>
-        <main class="principal principal--1">
-            <header class="encabezado encabezado--1">
-                <section class="seccion seccion--1">
-                    <h1 class="titulo1">
+        <header class="encabezado encabezado--1">
+            <section class="seccion seccion--1">
+                <h1 class="titulo1">
+                    Henry Richard Flores Bazurto
+                </h1>
+                <figure>
+                    <img src="./assets/img/Henry.jpg" alt="Foto de Henry" class="logo">
+                    <figcaption>Es la foto de Henry</figcaption>
+                </figure>
+            </section>
+            <section class="barradenavega">
+               <nav class="barradenavega1">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="">Sobre mi</a></li>
+                        <li><a href="">Poryectos</a></li>
+                        <li><a href="">Trabajo</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+               </nav> 
+            </section>
+        </header>
 
-                    </h1>
-                    <figure>
-                        <img src="./assets/img/Henry.jpg" alt="Foto de Henry" class="logo">
-                        <figcaption>Es la foto de Henry</figcaption>
-                    </figure>
-                </section>
-                <section class="barradenavega">
-                   <nav class="barradenavega1">
-                        <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Sobre mi</a></li>
-                            <li><a href="">Poryectos</a></li>
-                            <li><a href="">Trabajo</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                   </nav> 
-                </section>
-                <section>
+        <main class="principal principal--1">
+            <section>
+                <form action="">
+                    <label for="nombre">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nomnbre" autocomplete="name" required />
+
+                    </label>
+                    <br>
+                    <label for="apellido">
+                        <span>¿Tu apellido?</span>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="name" required />
+
+                    </label>
+                    <br>
+                    <label for="correo">
+                        <span>Tu correo</span>
+                        <input type="email" id="correo" name="correo" placeholder="Tu correo" autocomplete="email" required />
+
+                    </label>
+                    <br>
+                    <label for="cpostal">
+                        <span>Tu código postal</span>
+                        <input type="number" id="cpostal" name="cpostal" placeholder="Tu código postal"/>
+
+                    </label>
+                    <br>
+                    <label for="pais">
+                        <span>Tu Pais</span>
+                        <input type="text" id="pais" name="pais" placeholder="Tu pais" autocomplete="country" required/>
+
+                    </label>
+                    <br>
+                    <select name="Pais" id="">
+                        <option value="Peru">Peru</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                    <input list="cursos">
+                    <datalist id="cursos">
+                        <option value="Peru"></option>
+                        <option value="Chile"></option>
+                        <option value="Colombia"></option>
+                    </datalist>
+                    <br>
+                    <label for="inicio">
+                        <span>¿Qué fecha es?</span>
+                        <input type="date" name="inicio" id="inicio"/>
+
+                    </label>
+                    <br>
+                    <label for="horario">
+                        <span>¿Qué hora es?</span>
+                        <input type="time" name="horario" id="horario"/>
+
+                    </label>
+                    <br>
+                    <label for="hora">
+                        <span>Hora</span>
+                        <input type="time" id="hora" name="hora"/>
+                    </label>
+                    <br>
+                    <label for="dia">
+                        <span>Dia</span>
+                        <input type="date" id="dia" name="dia"/>
+                    </label>
+                    <br>
+                    <label for="semana">
+                        <span>Dia</span>
+                        <input type="week" id="semana" name="semana"/>
+                    </label>
+                    <br>
+                    <label for="mes">
+                        <span>Mes</span>
+                        <input type="month" id="mes" name="mes"/>
+                    </label>
+                    <input type="submit">
                     
-                    
-                </section>
-                
-            </header>
-            <section class="seccion2">
-                
+                </form>
+
+            </section>      
         </main>
         
         <script type="text/javascript" src="./assets/js/index.js"></script>
