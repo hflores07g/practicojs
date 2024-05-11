@@ -12,6 +12,11 @@ body {
     font-size: 1.8rem;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 header {
     /*width: 100%;*/
     /* border: 3px solid black; */
@@ -21,8 +26,8 @@ header {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows:300px;
-    justify-items: end;
-    align-items:flex-end;
+    justify-items: center;
+    align-items:center;
 
 }
 
@@ -40,13 +45,15 @@ header .barradenavega {
     justify-self:end;
     align-self: end; */
     /* border: 3px solid red; */
-    align-self:start;
+    align-self:center;
     
 }
 
 header nav .barradenavega1 {
     /* border: 4px solid blue; */
-
+    /* display: flex; */
+    
+    
 }
 
 figure img {
@@ -57,8 +64,15 @@ figure figcaption{
     
 }
 
-header nav ul {
-    display: flex;
+header section nav ul {
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   width: 100%;
+   height: auto;
+   border: 1px solid black;
+   
+
 }
 
 header nav ul li {
